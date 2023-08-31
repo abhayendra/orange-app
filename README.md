@@ -19,7 +19,7 @@ Before you can run this, follow these steps:
    npm install
    ```
 
-3. **Set up Environment Variables**: update API End Point in `App.js`
+3. **Set up API End Point Variables**: update API End Point in `App.js`
 
 4. **Start the Server**: Run the following command to start the GraphQL server.
 
