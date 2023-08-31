@@ -28,20 +28,3 @@ export const repoDetail = gql`
   }
 `;
 
-export const fileContent = gql`
-  query RepoDetails($name: String!) {
-    repoDetails(name: $name) {
-      name
-      numberOfFiles
-      owner
-      size
-      isPrivate
-      activeWebhooks { 
-        id
-        name
-        type
-        active
-      }
-    }
-  }
-`;

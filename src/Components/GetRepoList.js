@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 function GetRepoList() {
   const navigate = useNavigate();
+  // Use Apollo Client to send the query
   const { loading, error, data } = useQuery(listRepositories);
   if (loading) return <Spin size="large" />;
   if (error) return <p>Error: {error.message}</p>;
@@ -46,7 +47,7 @@ function GetRepoList() {
 
   return (
     <div>
-      <h1>List of Repositories</h1>
+      <h2>List of Repositories</h2>
       <Table dataSource={repositories} columns={columns} rowKey="name" />
     </div>
   );
